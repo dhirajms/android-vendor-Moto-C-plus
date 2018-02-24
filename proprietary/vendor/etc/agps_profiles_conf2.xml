@@ -231,38 +231,43 @@
       sha_version="1"
   />
 
- <!--bug 221691, modify bug-fix, zhaoshaofang.wt, 20161017 begin -->
- <!-- IUSACELL 33405 -->
- <supl_profile name="IUSACELL 33405"
+  <!-- Begin zhangsx10, IKANGEROW-480 IUSACELL/NIIMX SUPL config -->
+  <!-- Begin zhangsx10, IKANGEROW-2475 treat old sim card mccmnc 33405 same as 334050 -->
+  <!-- IUSACELL 33405 -->
+  <supl_profile name="IUSACELL 33405"
       addr="supl.iusacell.com"
       port="7275"
       tls="true"
       mcc_mnc="33405"
       supl_version="1"
-      tls_version="0"
+      tls_version="1"
       sha_version="0"
   />
-  <!-- IUSACELL 334050-->
+  <!-- End IKANGEROW-2475 -->
+
+  <!-- IUSACELL 334050 -->
   <supl_profile name="IUSACELL 334050"
-    addr="supl.iusacell.com"
-    port="7275"
-    tls="true"
-    mcc_mnc="334050"
-    supl_version="1"
-    tls_version="0"
-    sha_version="0"
+      addr="supl.iusacell.com"
+      port="7275"
+      tls="true"
+      mcc_mnc="334050"
+      supl_version="1"
+      tls_version="1"
+      sha_version="0"
   />
 
-  <!-- IUSACELL 334090-->
+  <!-- IUSACELL 334090 -->
   <supl_profile name="IUSACELL 334090"
-    addr="supl.iusacell.com"
-    port="7275"
-    supl_version="2"
-    tls="true"
-    tls_version="1"
-    mcc_mnc="334090"
+      addr="supl.iusacell.com"
+      port="7275"
+      tls="true"
+      mcc_mnc="334090"
+      supl_version="1"
+      tls_version="1"
+      sha_version="0"
   />
-  <!--bug 221691, modify bug-fix, zhaoshaofang.wt, 20161017 end -->
+  <!-- End IKANGEROW-480 -->
+
   <!-- cdma_profile
 
     name:
@@ -552,14 +557,15 @@
         enable/disable tls session reuse mode
         available value: true, false (default)
   -->
+  <!-- zhangsx10, IKANGEROW-2475 enable the dedicated SUPL APN flow -->
   <up_setting
     ca_enable="false"
     ni_request="true"
     roaming="true"
     cdma_preferred="0"
     pref_method="1"
-    supl_version="1"
-    tls_version="0"
+    supl_version="2"
+    tls_version="1"
     sha_version="0"
     supl_log="false"
     msa_enable="true"
@@ -587,4 +593,5 @@
     supl_ver_ser_ind="0"
     tls_reuse_enable="false"
   />
+
 </mtk_agps_profiles>
