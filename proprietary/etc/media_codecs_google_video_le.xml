@@ -98,7 +98,7 @@
         </MediaCodec>
         <MediaCodec name="OMX.google.vp8.encoder" type="video/x-vnd.on2.vp8">
             <!-- profiles and levels:  ProfileMain : Level_Version0-3 -->
-            <Limit name="size" min="2x2" max="720x480" />
+            <Limit name="size" min="2x2" max="1280x1280" />
             <Limit name="alignment" value="2x2" />
             <Limit name="block-count" range="1-3600" />
             <Limit name="bitrate" range="1-20000000" />
