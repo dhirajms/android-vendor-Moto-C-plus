@@ -1,0 +1,8 @@
+on property:vold.decrypt=trigger_restart_framework
+    start nvram_daemon
+
+service nvram_daemon /vendor/bin/nvram_daemon
+    class main
+    user root
+    group system
+    oneshot

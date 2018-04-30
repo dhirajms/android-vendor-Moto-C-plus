@@ -1,0 +1,4 @@
+service emsvr /vendor/bin/em_svr
+    class main
+    user camera
+    group camera
