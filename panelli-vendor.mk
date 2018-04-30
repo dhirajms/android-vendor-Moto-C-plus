@@ -11,3 +11,5 @@ PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/moto/panelli/propri
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/moto/panelli/proprietary/vendor/firmware,system/vendor/firmware)
 
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/moto/panelli/proprietary/vendor/lib,system/vendor/lib)
+
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/moto/panelli/usr,system/usr)
